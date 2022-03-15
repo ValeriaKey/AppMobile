@@ -4,56 +4,105 @@ using Xamarin.Forms;
 
 namespace AppMobile
 {
-        public partial class MainPage : ContentPage
+    public partial class MainPage : ContentPage
+    {
+        Button box_btn, entry_btn, timer_btn, date_btn, slider_btn, rgb_btn;
+        public MainPage()
         {
-            public MainPage()
+
+            // BoxView
+
+            box_btn = new Button
             {
-                Button box_btn = new Button
-                {
-                    Text = "BoxView",
-                    BackgroundColor = Color.White
-                };
+                Text = "BoxView",
+                BackgroundColor = Color.White
+            };
 
-                box_btn.Clicked += Box_btn_Clicked;
+            box_btn.Clicked += Start_Pages;
 
-                Button entry_btn = new Button
-                {
-                    Text = "Entry",
-                    BackgroundColor = Color.White
-                };
+            entry_btn = new Button
+            {
+                Text = "Entry",
+                BackgroundColor = Color.White
+            };
 
-                entry_btn.Clicked += Entry_btn_Clicked;
-                
-                Button timer_btn = new Button
-                {
-                    Text = "Timer",
-                    BackgroundColor = Color.White
-                };
+            entry_btn.Clicked += Start_Pages;
 
-                timer_btn.Clicked += Timer_btn_Clicked; 
+            // Timer
+
+            timer_btn = new Button
+            {
+                Text = "Timer",
+                BackgroundColor = Color.White
+            };
+
+            timer_btn.Clicked += Start_Pages;
+
+            date_btn = new Button
+            {
+                Text = "Date/Time",
+                BackgroundColor = Color.White
+            };
+
+            date_btn.Clicked += Start_Pages;
+
+            // Slider
+
+            slider_btn = new Button
+            {
+                Text = "Slider",
+                BackgroundColor = Color.White
+            };
+
+            slider_btn.Clicked += Start_Pages;
+
+            // RGB Color
+
+            rgb_btn = new Button
+            {
+                Text = "RGB Color",
+                BackgroundColor = Color.White
+            };
+
+            rgb_btn.Clicked += Start_Pages;
 
             StackLayout st = new StackLayout
-                {
-                    Children = { box_btn, entry_btn, timer_btn }
-                };
+            {
+                Children = { box_btn, entry_btn, timer_btn, date_btn, slider_btn, rgb_btn }
+            };
 
-                st.BackgroundColor = Color.Cyan;
-                Content = st;
+            st.BackgroundColor = Color.Cyan;
+            Content = st;
+        }
+
+        private async void Start_Pages(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+            if (sender == date_btn)
+            {
+                await Navigation.PushAsync(new Data_Page());
             }
-
-            private async void Entry_btn_Clicked(object sender, System.EventArgs e)
+            else if (sender == entry_btn)
             {
                 await Navigation.PushAsync(new Entry_Page());
             }
-
-            private async void Box_btn_Clicked(object sender, System.EventArgs e)
+            else if (sender == box_btn)
             {
                 await Navigation.PushAsync(new Box_Page());
             }
-            private async void Timer_btn_Clicked(object sender, System.EventArgs e)
+            else if (sender == timer_btn)
             {
                 await Navigation.PushAsync(new Timer_Page());
             }
+            else if (sender == slider_btn)
+            {
+                await Navigation.PushAsync(new Stp_sl_Page());
+
+            } else if(sender == rgb_btn)
+            {
+                await Navigation.PushAsync(new RGB_Color());
+            }
+        }
     }
-    }
+}
 
