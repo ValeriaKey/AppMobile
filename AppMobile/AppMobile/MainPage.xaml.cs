@@ -6,7 +6,7 @@ namespace AppMobile
 {
     public partial class MainPage : ContentPage
     {
-        Button box_btn, entry_btn, timer_btn, date_btn, slider_btn, rgb_btn;
+        Button box_btn, entry_btn, timer_btn, date_btn, slider_btn, rgb_btn, frame_btn, img_btn, ttt_btn;
         public MainPage()
         {
 
@@ -66,13 +66,44 @@ namespace AppMobile
 
             rgb_btn.Clicked += Start_Pages;
 
+            // Frame
+
+            frame_btn = new Button
+            {
+                Text = "Frame - Grid",
+                BackgroundColor = Color.White
+            };
+
+            frame_btn.Clicked += Start_Pages;
+
+            // Image
+
+            img_btn = new Button
+            {
+                Text = "Image",
+                BackgroundColor = Color.White
+            };
+
+            img_btn.Clicked += Start_Pages;
+            // Tic Tac Toe
+
+            ttt_btn = new Button
+            {
+                Text = "Tic Tac Toe",
+                BackgroundColor = Color.White
+            };
+
+            ttt_btn.Clicked += Start_Pages;
+
             StackLayout st = new StackLayout
             {
-                Children = { box_btn, entry_btn, timer_btn, date_btn, slider_btn, rgb_btn }
+                Children = { box_btn, entry_btn, timer_btn, date_btn, slider_btn, rgb_btn, frame_btn, img_btn, ttt_btn }
             };
 
             st.BackgroundColor = Color.Cyan;
             Content = st;
+
+            
         }
 
         private async void Start_Pages(object sender, EventArgs e)
@@ -98,9 +129,22 @@ namespace AppMobile
             {
                 await Navigation.PushAsync(new Stp_sl_Page());
 
-            } else if(sender == rgb_btn)
+            }
+            else if (sender == rgb_btn)
             {
                 await Navigation.PushAsync(new RGB_Color());
+            }
+            else if (sender == frame_btn)
+            {
+                await Navigation.PushAsync(new Frame_Page());
+            }
+            else if (sender == img_btn)
+            {
+                await Navigation.PushAsync(new Image_Page());
+            }
+            else if (sender == ttt_btn)
+            {
+                await Navigation.PushAsync(new Tic_Tac_Toe());
             }
         }
     }
