@@ -6,7 +6,7 @@ namespace AppMobile
 {
     public partial class MainPage : ContentPage
     {
-        Button box_btn, entry_btn, timer_btn, date_btn, slider_btn, rgb_btn, frame_btn, img_btn, ttt_btn;
+        Button box_btn, entry_btn, timer_btn, date_btn, slider_btn, rgb_btn, frame_btn, img_btn, ttt_btn, pickerPage_btn, browser_btn;
         public MainPage()
         {
 
@@ -94,10 +94,23 @@ namespace AppMobile
             };
 
             ttt_btn.Clicked += Start_Pages;
+            // Picker Page
+            pickerPage_btn = new Button
+            {
+                Text = "Picker Page",
+                BackgroundColor = Color.White
+            };
+            pickerPage_btn.Clicked += Start_Pages;
 
+            browser_btn = new Button
+            {
+                Text = "Browser Page",
+                BackgroundColor = Color.White
+            };
+            browser_btn.Clicked += Start_Pages;
             StackLayout st = new StackLayout
             {
-                Children = { box_btn, entry_btn, timer_btn, date_btn, slider_btn, rgb_btn, frame_btn, img_btn, ttt_btn }
+                Children = { box_btn, entry_btn, timer_btn, date_btn, slider_btn, rgb_btn, frame_btn, img_btn, ttt_btn, pickerPage_btn, browser_btn }
             };
 
             st.BackgroundColor = Color.Cyan;
@@ -146,6 +159,15 @@ namespace AppMobile
             {
                 await Navigation.PushAsync(new Tic_Tac_Toe());
             }
+            else if (sender == pickerPage_btn)
+            {
+                await Navigation.PushAsync(new Picker_Page());
+            }
+            else if (sender == browser_btn)
+            {
+                await Navigation.PushAsync(new Browser_Page());
+            }
+            
         }
     }
 }
