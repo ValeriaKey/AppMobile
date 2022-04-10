@@ -6,7 +6,7 @@ namespace AppMobile
 {
     public partial class MainPage : ContentPage
     {
-        Button box_btn, entry_btn, timer_btn, date_btn, slider_btn, rgb_btn, frame_btn, img_btn, ttt_btn, pickerPage_btn, browser_btn;
+        Button box_btn, entry_btn, timer_btn, date_btn, slider_btn, rgb_btn, frame_btn, img_btn, ttt_btn, pickerPage_btn, browser_btn, table_btn;
         public MainPage()
         {
 
@@ -102,15 +102,25 @@ namespace AppMobile
             };
             pickerPage_btn.Clicked += Start_Pages;
 
+            // Browser
             browser_btn = new Button
             {
                 Text = "Browser Page",
                 BackgroundColor = Color.White
             };
             browser_btn.Clicked += Start_Pages;
+
+            // Table 
+            table_btn = new Button
+            {
+                Text = "Table Page",
+                BackgroundColor = Color.White
+            };
+            table_btn.Clicked += Start_Pages;
+
             StackLayout st = new StackLayout
             {
-                Children = { box_btn, entry_btn, timer_btn, date_btn, slider_btn, rgb_btn, frame_btn, img_btn, ttt_btn, pickerPage_btn, browser_btn }
+                Children = { box_btn, entry_btn, timer_btn, date_btn, slider_btn, rgb_btn, frame_btn, img_btn, ttt_btn, pickerPage_btn, browser_btn, table_btn }
             };
 
             st.BackgroundColor = Color.Cyan;
@@ -167,7 +177,11 @@ namespace AppMobile
             {
                 await Navigation.PushAsync(new Browser_Page());
             }
-            
+            else if (sender == table_btn)
+            {
+                await Navigation.PushAsync(new Table_Page());
+            }
+
         }
     }
 }
