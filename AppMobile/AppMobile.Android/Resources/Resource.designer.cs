@@ -25,6 +25,107 @@ namespace AppMobile.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::Plugin.Messaging.Resource.Attribute.font = global::AppMobile.Droid.Resource.Attribute.font;
+			global::Plugin.Messaging.Resource.Attribute.fontProviderAuthority = global::AppMobile.Droid.Resource.Attribute.fontProviderAuthority;
+			global::Plugin.Messaging.Resource.Attribute.fontProviderCerts = global::AppMobile.Droid.Resource.Attribute.fontProviderCerts;
+			global::Plugin.Messaging.Resource.Attribute.fontProviderFetchStrategy = global::AppMobile.Droid.Resource.Attribute.fontProviderFetchStrategy;
+			global::Plugin.Messaging.Resource.Attribute.fontProviderFetchTimeout = global::AppMobile.Droid.Resource.Attribute.fontProviderFetchTimeout;
+			global::Plugin.Messaging.Resource.Attribute.fontProviderPackage = global::AppMobile.Droid.Resource.Attribute.fontProviderPackage;
+			global::Plugin.Messaging.Resource.Attribute.fontProviderQuery = global::AppMobile.Droid.Resource.Attribute.fontProviderQuery;
+			global::Plugin.Messaging.Resource.Attribute.fontStyle = global::AppMobile.Droid.Resource.Attribute.fontStyle;
+			global::Plugin.Messaging.Resource.Attribute.fontWeight = global::AppMobile.Droid.Resource.Attribute.fontWeight;
+			global::Plugin.Messaging.Resource.Boolean.abc_action_bar_embed_tabs = global::AppMobile.Droid.Resource.Boolean.abc_action_bar_embed_tabs;
+			global::Plugin.Messaging.Resource.Color.notification_action_color_filter = global::AppMobile.Droid.Resource.Color.notification_action_color_filter;
+			global::Plugin.Messaging.Resource.Color.notification_icon_bg_color = global::AppMobile.Droid.Resource.Color.notification_icon_bg_color;
+			global::Plugin.Messaging.Resource.Color.ripple_material_light = global::AppMobile.Droid.Resource.Color.ripple_material_light;
+			global::Plugin.Messaging.Resource.Color.secondary_text_default_material_light = global::AppMobile.Droid.Resource.Color.secondary_text_default_material_light;
+			global::Plugin.Messaging.Resource.Dimension.compat_button_inset_horizontal_material = global::AppMobile.Droid.Resource.Dimension.compat_button_inset_horizontal_material;
+			global::Plugin.Messaging.Resource.Dimension.compat_button_inset_vertical_material = global::AppMobile.Droid.Resource.Dimension.compat_button_inset_vertical_material;
+			global::Plugin.Messaging.Resource.Dimension.compat_button_padding_horizontal_material = global::AppMobile.Droid.Resource.Dimension.compat_button_padding_horizontal_material;
+			global::Plugin.Messaging.Resource.Dimension.compat_button_padding_vertical_material = global::AppMobile.Droid.Resource.Dimension.compat_button_padding_vertical_material;
+			global::Plugin.Messaging.Resource.Dimension.compat_control_corner_material = global::AppMobile.Droid.Resource.Dimension.compat_control_corner_material;
+			global::Plugin.Messaging.Resource.Dimension.notification_action_icon_size = global::AppMobile.Droid.Resource.Dimension.notification_action_icon_size;
+			global::Plugin.Messaging.Resource.Dimension.notification_action_text_size = global::AppMobile.Droid.Resource.Dimension.notification_action_text_size;
+			global::Plugin.Messaging.Resource.Dimension.notification_big_circle_margin = global::AppMobile.Droid.Resource.Dimension.notification_big_circle_margin;
+			global::Plugin.Messaging.Resource.Dimension.notification_content_margin_start = global::AppMobile.Droid.Resource.Dimension.notification_content_margin_start;
+			global::Plugin.Messaging.Resource.Dimension.notification_large_icon_height = global::AppMobile.Droid.Resource.Dimension.notification_large_icon_height;
+			global::Plugin.Messaging.Resource.Dimension.notification_large_icon_width = global::AppMobile.Droid.Resource.Dimension.notification_large_icon_width;
+			global::Plugin.Messaging.Resource.Dimension.notification_main_column_padding_top = global::AppMobile.Droid.Resource.Dimension.notification_main_column_padding_top;
+			global::Plugin.Messaging.Resource.Dimension.notification_media_narrow_margin = global::AppMobile.Droid.Resource.Dimension.notification_media_narrow_margin;
+			global::Plugin.Messaging.Resource.Dimension.notification_right_icon_size = global::AppMobile.Droid.Resource.Dimension.notification_right_icon_size;
+			global::Plugin.Messaging.Resource.Dimension.notification_right_side_padding_top = global::AppMobile.Droid.Resource.Dimension.notification_right_side_padding_top;
+			global::Plugin.Messaging.Resource.Dimension.notification_small_icon_background_padding = global::AppMobile.Droid.Resource.Dimension.notification_small_icon_background_padding;
+			global::Plugin.Messaging.Resource.Dimension.notification_small_icon_size_as_large = global::AppMobile.Droid.Resource.Dimension.notification_small_icon_size_as_large;
+			global::Plugin.Messaging.Resource.Dimension.notification_subtext_size = global::AppMobile.Droid.Resource.Dimension.notification_subtext_size;
+			global::Plugin.Messaging.Resource.Dimension.notification_top_pad = global::AppMobile.Droid.Resource.Dimension.notification_top_pad;
+			global::Plugin.Messaging.Resource.Dimension.notification_top_pad_large_text = global::AppMobile.Droid.Resource.Dimension.notification_top_pad_large_text;
+			global::Plugin.Messaging.Resource.Drawable.notification_action_background = global::AppMobile.Droid.Resource.Drawable.notification_action_background;
+			global::Plugin.Messaging.Resource.Drawable.notification_bg = global::AppMobile.Droid.Resource.Drawable.notification_bg;
+			global::Plugin.Messaging.Resource.Drawable.notification_bg_low = global::AppMobile.Droid.Resource.Drawable.notification_bg_low;
+			global::Plugin.Messaging.Resource.Drawable.notification_bg_low_normal = global::AppMobile.Droid.Resource.Drawable.notification_bg_low_normal;
+			global::Plugin.Messaging.Resource.Drawable.notification_bg_low_pressed = global::AppMobile.Droid.Resource.Drawable.notification_bg_low_pressed;
+			global::Plugin.Messaging.Resource.Drawable.notification_bg_normal = global::AppMobile.Droid.Resource.Drawable.notification_bg_normal;
+			global::Plugin.Messaging.Resource.Drawable.notification_bg_normal_pressed = global::AppMobile.Droid.Resource.Drawable.notification_bg_normal_pressed;
+			global::Plugin.Messaging.Resource.Drawable.notification_icon_background = global::AppMobile.Droid.Resource.Drawable.notification_icon_background;
+			global::Plugin.Messaging.Resource.Drawable.notification_template_icon_bg = global::AppMobile.Droid.Resource.Drawable.notification_template_icon_bg;
+			global::Plugin.Messaging.Resource.Drawable.notification_template_icon_low_bg = global::AppMobile.Droid.Resource.Drawable.notification_template_icon_low_bg;
+			global::Plugin.Messaging.Resource.Drawable.notification_tile_bg = global::AppMobile.Droid.Resource.Drawable.notification_tile_bg;
+			global::Plugin.Messaging.Resource.Drawable.notify_panel_notification_icon_bg = global::AppMobile.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
+			global::Plugin.Messaging.Resource.Id.actions = global::AppMobile.Droid.Resource.Id.actions;
+			global::Plugin.Messaging.Resource.Id.action_container = global::AppMobile.Droid.Resource.Id.action_container;
+			global::Plugin.Messaging.Resource.Id.action_divider = global::AppMobile.Droid.Resource.Id.action_divider;
+			global::Plugin.Messaging.Resource.Id.action_image = global::AppMobile.Droid.Resource.Id.action_image;
+			global::Plugin.Messaging.Resource.Id.action_text = global::AppMobile.Droid.Resource.Id.action_text;
+			global::Plugin.Messaging.Resource.Id.async = global::AppMobile.Droid.Resource.Id.async;
+			global::Plugin.Messaging.Resource.Id.blocking = global::AppMobile.Droid.Resource.Id.blocking;
+			global::Plugin.Messaging.Resource.Id.chronometer = global::AppMobile.Droid.Resource.Id.chronometer;
+			global::Plugin.Messaging.Resource.Id.forever = global::AppMobile.Droid.Resource.Id.forever;
+			global::Plugin.Messaging.Resource.Id.icon = global::AppMobile.Droid.Resource.Id.icon;
+			global::Plugin.Messaging.Resource.Id.icon_group = global::AppMobile.Droid.Resource.Id.icon_group;
+			global::Plugin.Messaging.Resource.Id.info = global::AppMobile.Droid.Resource.Id.info;
+			global::Plugin.Messaging.Resource.Id.italic = global::AppMobile.Droid.Resource.Id.italic;
+			global::Plugin.Messaging.Resource.Id.line1 = global::AppMobile.Droid.Resource.Id.line1;
+			global::Plugin.Messaging.Resource.Id.line3 = global::AppMobile.Droid.Resource.Id.line3;
+			global::Plugin.Messaging.Resource.Id.normal = global::AppMobile.Droid.Resource.Id.normal;
+			global::Plugin.Messaging.Resource.Id.notification_background = global::AppMobile.Droid.Resource.Id.notification_background;
+			global::Plugin.Messaging.Resource.Id.notification_main_column = global::AppMobile.Droid.Resource.Id.notification_main_column;
+			global::Plugin.Messaging.Resource.Id.notification_main_column_container = global::AppMobile.Droid.Resource.Id.notification_main_column_container;
+			global::Plugin.Messaging.Resource.Id.right_icon = global::AppMobile.Droid.Resource.Id.right_icon;
+			global::Plugin.Messaging.Resource.Id.right_side = global::AppMobile.Droid.Resource.Id.right_side;
+			global::Plugin.Messaging.Resource.Id.tag_transition_group = global::AppMobile.Droid.Resource.Id.tag_transition_group;
+			global::Plugin.Messaging.Resource.Id.text = global::AppMobile.Droid.Resource.Id.text;
+			global::Plugin.Messaging.Resource.Id.text2 = global::AppMobile.Droid.Resource.Id.text2;
+			global::Plugin.Messaging.Resource.Id.time = global::AppMobile.Droid.Resource.Id.time;
+			global::Plugin.Messaging.Resource.Id.title = global::AppMobile.Droid.Resource.Id.title;
+			global::Plugin.Messaging.Resource.Integer.status_bar_notification_info_maxnum = global::AppMobile.Droid.Resource.Integer.status_bar_notification_info_maxnum;
+			global::Plugin.Messaging.Resource.Layout.notification_action = global::AppMobile.Droid.Resource.Layout.notification_action;
+			global::Plugin.Messaging.Resource.Layout.notification_action_tombstone = global::AppMobile.Droid.Resource.Layout.notification_action_tombstone;
+			global::Plugin.Messaging.Resource.Layout.notification_template_custom_big = global::AppMobile.Droid.Resource.Layout.notification_template_custom_big;
+			global::Plugin.Messaging.Resource.Layout.notification_template_icon_group = global::AppMobile.Droid.Resource.Layout.notification_template_icon_group;
+			global::Plugin.Messaging.Resource.Layout.notification_template_part_chronometer = global::AppMobile.Droid.Resource.Layout.notification_template_part_chronometer;
+			global::Plugin.Messaging.Resource.Layout.notification_template_part_time = global::AppMobile.Droid.Resource.Layout.notification_template_part_time;
+			global::Plugin.Messaging.Resource.String.status_bar_notification_info_overflow = global::AppMobile.Droid.Resource.String.status_bar_notification_info_overflow;
+			global::Plugin.Messaging.Resource.Style.TextAppearance_Compat_Notification = global::AppMobile.Droid.Resource.Style.TextAppearance_Compat_Notification;
+			global::Plugin.Messaging.Resource.Style.TextAppearance_Compat_Notification_Info = global::AppMobile.Droid.Resource.Style.TextAppearance_Compat_Notification_Info;
+			global::Plugin.Messaging.Resource.Style.TextAppearance_Compat_Notification_Line2 = global::AppMobile.Droid.Resource.Style.TextAppearance_Compat_Notification_Line2;
+			global::Plugin.Messaging.Resource.Style.TextAppearance_Compat_Notification_Time = global::AppMobile.Droid.Resource.Style.TextAppearance_Compat_Notification_Time;
+			global::Plugin.Messaging.Resource.Style.TextAppearance_Compat_Notification_Title = global::AppMobile.Droid.Resource.Style.TextAppearance_Compat_Notification_Title;
+			global::Plugin.Messaging.Resource.Style.Widget_Compat_NotificationActionContainer = global::AppMobile.Droid.Resource.Style.Widget_Compat_NotificationActionContainer;
+			global::Plugin.Messaging.Resource.Style.Widget_Compat_NotificationActionText = global::AppMobile.Droid.Resource.Style.Widget_Compat_NotificationActionText;
+			global::Plugin.Messaging.Resource.Styleable.FontFamily = global::AppMobile.Droid.Resource.Styleable.FontFamily;
+			global::Plugin.Messaging.Resource.Styleable.FontFamilyFont = global::AppMobile.Droid.Resource.Styleable.FontFamilyFont;
+			global::Plugin.Messaging.Resource.Styleable.FontFamilyFont_android_font = global::AppMobile.Droid.Resource.Styleable.FontFamilyFont_android_font;
+			global::Plugin.Messaging.Resource.Styleable.FontFamilyFont_android_fontStyle = global::AppMobile.Droid.Resource.Styleable.FontFamilyFont_android_fontStyle;
+			global::Plugin.Messaging.Resource.Styleable.FontFamilyFont_android_fontWeight = global::AppMobile.Droid.Resource.Styleable.FontFamilyFont_android_fontWeight;
+			global::Plugin.Messaging.Resource.Styleable.FontFamilyFont_font = global::AppMobile.Droid.Resource.Styleable.FontFamilyFont_font;
+			global::Plugin.Messaging.Resource.Styleable.FontFamilyFont_fontStyle = global::AppMobile.Droid.Resource.Styleable.FontFamilyFont_fontStyle;
+			global::Plugin.Messaging.Resource.Styleable.FontFamilyFont_fontWeight = global::AppMobile.Droid.Resource.Styleable.FontFamilyFont_fontWeight;
+			global::Plugin.Messaging.Resource.Styleable.FontFamily_fontProviderAuthority = global::AppMobile.Droid.Resource.Styleable.FontFamily_fontProviderAuthority;
+			global::Plugin.Messaging.Resource.Styleable.FontFamily_fontProviderCerts = global::AppMobile.Droid.Resource.Styleable.FontFamily_fontProviderCerts;
+			global::Plugin.Messaging.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::AppMobile.Droid.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
+			global::Plugin.Messaging.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::AppMobile.Droid.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
+			global::Plugin.Messaging.Resource.Styleable.FontFamily_fontProviderPackage = global::AppMobile.Droid.Resource.Styleable.FontFamily_fontProviderPackage;
+			global::Plugin.Messaging.Resource.Styleable.FontFamily_fontProviderQuery = global::AppMobile.Droid.Resource.Styleable.FontFamily_fontProviderQuery;
 			global::Xamarin.Essentials.Resource.Attribute.alpha = global::AppMobile.Droid.Resource.Attribute.alpha;
 			global::Xamarin.Essentials.Resource.Attribute.font = global::AppMobile.Droid.Resource.Attribute.font;
 			global::Xamarin.Essentials.Resource.Attribute.fontProviderAuthority = global::AppMobile.Droid.Resource.Attribute.fontProviderAuthority;
@@ -16674,6 +16775,9 @@ namespace AppMobile.Droid
 			
 			// aapt resource value: 0x7F070093
 			public const int ttt = 2131165331;
+			
+			// aapt resource value: 0x7F070094
+			public const int vn = 2131165332;
 			
 			static Drawable()
 			{
