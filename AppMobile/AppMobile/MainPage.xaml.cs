@@ -6,7 +6,7 @@ namespace AppMobile
 {
     public partial class MainPage : ContentPage
     {
-        Button box_btn, entry_btn, timer_btn, date_btn, slider_btn, rgb_btn, frame_btn, img_btn, ttt_btn, pickerPage_btn, browser_btn, table_btn;
+        Button box_btn, entry_btn, timer_btn, date_btn, slider_btn, rgb_btn, frame_btn, img_btn, ttt_btn, pickerPage_btn, browser_btn, table_btn, maakond_btn, horoskop_btn, ajaplaan_btn;
         public MainPage()
         {
 
@@ -117,10 +117,31 @@ namespace AppMobile
                 BackgroundColor = Color.White
             };
             table_btn.Clicked += Start_Pages;
+            // Maakond
+            maakond_btn = new Button
+            {
+                Text = "Maakond - 1",
+                BackgroundColor = Color.White
+            };
+            maakond_btn.Clicked += Start_Pages;
 
+            // Horoskop
+            horoskop_btn = new Button
+            {
+                Text = "Horoskop - 2",
+                BackgroundColor = Color.White
+            };
+            horoskop_btn.Clicked += Start_Pages;
+            // Ajaplaan
+            ajaplaan_btn = new Button
+            {
+                Text = "Ajaplaan - 3",
+                BackgroundColor = Color.White
+            };
+            ajaplaan_btn.Clicked += Start_Pages;
             StackLayout st = new StackLayout
             {
-                Children = { box_btn, entry_btn, timer_btn, date_btn, slider_btn, rgb_btn, frame_btn, img_btn, ttt_btn, pickerPage_btn, browser_btn, table_btn }
+                Children = { browser_btn, table_btn, maakond_btn, horoskop_btn, ajaplaan_btn  }
             };
 
             st.BackgroundColor = Color.Cyan;
@@ -134,40 +155,40 @@ namespace AppMobile
             Button btn = (Button)sender;
             if (sender == date_btn)
             {
-                await Navigation.PushAsync(new Data_Page());
+             //   await Navigation.PushAsync(new Data_Page());
             }
             else if (sender == entry_btn)
             {
-                await Navigation.PushAsync(new Entry_Page());
+             //   await Navigation.PushAsync(new Entry_Page());
             }
             else if (sender == box_btn)
             {
-                await Navigation.PushAsync(new Box_Page());
+            //    await Navigation.PushAsync(new Box_Page());
             }
             else if (sender == timer_btn)
             {
-                await Navigation.PushAsync(new Timer_Page());
+            //    await Navigation.PushAsync(new Timer_Page());
             }
             else if (sender == slider_btn)
             {
-                await Navigation.PushAsync(new Stp_sl_Page());
+             //   await Navigation.PushAsync(new Stp_sl_Page());
 
             }
             else if (sender == rgb_btn)
             {
-                await Navigation.PushAsync(new RGB_Color());
+             //  await Navigation.PushAsync(new RGB_Color());
             }
             else if (sender == frame_btn)
             {
-                await Navigation.PushAsync(new Frame_Page());
+             //   await Navigation.PushAsync(new Frame_Page());
             }
             else if (sender == img_btn)
             {
-                await Navigation.PushAsync(new Image_Page());
+              //  await Navigation.PushAsync(new Image_Page());
             }
             else if (sender == ttt_btn)
             {
-                await Navigation.PushAsync(new Tic_Tac_Toe());
+             //   await Navigation.PushAsync(new Tic_Tac_Toe());
             }
             else if (sender == pickerPage_btn)
             {
@@ -180,6 +201,18 @@ namespace AppMobile
             else if (sender == table_btn)
             {
                 await Navigation.PushAsync(new Table_Page());
+            }
+            else if(sender == maakond_btn)
+            {
+                await Navigation.PushAsync(new Makonnad());
+            }
+            else if (sender == horoskop_btn)
+            {
+                await Navigation.PushAsync(new Horoskop());
+            }
+            else if (sender == ajaplaan_btn)
+            {
+               // await Navigation.PushAsync(new Ajaplaan());
             }
 
         }
