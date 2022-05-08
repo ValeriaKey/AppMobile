@@ -12,9 +12,18 @@ namespace AppMobile
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Ajaplaan : ContentPage
     {
+        Label title;
+        Image img;
+        TimePicker tp;
         public Ajaplaan()
         {
-            InitializeComponent();
+            title = new Label
+            {
+                Text = "Ajaplaan",
+                FontSize = 24,
+                TextColor = Color.Black
+
+            };
         }
     }
 }

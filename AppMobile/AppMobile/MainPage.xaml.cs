@@ -135,7 +135,7 @@ namespace AppMobile
             // Ajaplaan
             ajaplaan_btn = new Button
             {
-                Text = "Ajaplaan - 3",
+                Text = "Countries",
                 BackgroundColor = Color.White
             };
             ajaplaan_btn.Clicked += Start_Pages;
@@ -212,7 +212,7 @@ namespace AppMobile
             }
             else if (sender == ajaplaan_btn)
             {
-               // await Navigation.PushAsync(new Ajaplaan());
+               await Navigation.PushAsync(new Countries());
             }
 
         }
