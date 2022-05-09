@@ -90,13 +90,23 @@ namespace AppMobile
         private void Edit_Clicked(object sender, EventArgs e)
         {
             Country countr = list.SelectedItem as Country;
-            if (countr != null)
-            {
-                countries.Remove(countr);
-                list.SelectedItem = null;
-            }
-            countries.Add(new Country { Name = country.Text, Capital = capital.Text, Population = population.Text, Flag = imageURL.Text });
 
+            var name = country.Text;
+            if (countries.Any(x => x.Name == name))
+            {
+                DisplayAlert("Warning:", "This country already exists in list:)", "OK");
+            }
+
+            else
+            {
+                if (countr != null)
+                {
+                    countries.Remove(countr);
+                    list.SelectedItem = null;
+                }
+                countries.Add(new Country { Name = country.Text, Capital = capital.Text, Population = population.Text, Flag = imageURL.Text });
+
+            }
         }
 
         private async void List_ItemSelected(object sender, SelectedItemChangedEventArgs e)
