@@ -15,7 +15,7 @@ namespace AppMobile
     {
         Label lbl_list;
         ListView list;
-        Button lisa, kustuta;
+        Button lisa, kustuta,edit;
         Entry country, capital, population, imageURL;
         public ObservableCollection<Country> countries { get; set; }
         public class Country
@@ -28,13 +28,14 @@ namespace AppMobile
         }
         public Countries()
         {
-        
-        countries = new ObservableCollection<Country>
+
+            countries = new ObservableCollection<Country>
             {
                 new Country {Name="Estonia", Capital="Tallinn", Population="1,331m", Flag="estoniafl.png"},
                 new Country {Name="Latvia", Capital="Riga", Population="1,902m", Flag="latviafl.png"},
                 new Country {Name="Lithuania", Capital="Vilnius", Population="2,795m", Flag="lithfl.png"},
             };
+
             lbl_list = new Label
             {
                 Text = "Countries",
@@ -59,6 +60,7 @@ namespace AppMobile
 
 
             };
+            list.ItemSelected += List_ItemSelected;
             country = new Entry
             {
                 Placeholder = "Country"
@@ -79,8 +81,30 @@ namespace AppMobile
             lisa.Clicked += Lisa_Clicked;
             kustuta = new Button { Text = "Delete Country" };
             kustuta.Clicked += Kustuta_Clicked;
+            edit = new Button { Text = "Edit Country" };
+            edit.Clicked += Edit_Clicked;
 
-            this.Content = new StackLayout { Children = { lbl_list, list,country, capital, population, imageURL, lisa, kustuta } };
+            this.Content = new StackLayout { Children = { lbl_list, list,country, capital, population, imageURL, lisa,edit, kustuta } };
+        }
+
+        private void Edit_Clicked(object sender, EventArgs e)
+        {
+            Country countr = list.SelectedItem as Country;
+            if (countr != null)
+            {
+                countries.Remove(countr);
+                list.SelectedItem = null;
+            }
+            countries.Add(new Country { Name = country.Text, Capital = capital.Text, Population = population.Text, Flag = imageURL.Text });
+
+        }
+
+        private async void List_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            var country = ((ListView)sender).SelectedItem as Country;
+            if (country == null)
+                return;
+            await DisplayAlert("Information:", "Country:" + country.Name +"\n Capital:" + country.Capital +" \n Population:" + country.Population, "Ok");
         }
 
         private void Kustuta_Clicked(object sender, EventArgs e)
@@ -92,9 +116,16 @@ namespace AppMobile
                 list.SelectedItem = null;
             }
         }
-        private void Lisa_Clicked(object sender, EventArgs e)
+        private async void Lisa_Clicked(object sender, EventArgs e)
         {
-            countries.Add(new Country { Name = country.Text, Capital = capital.Text, Population = population.Text, Flag = imageURL.Text });
+            var name = country.Text;
+            if (countries.Any(x => x.Name == name)){
+                await DisplayAlert("Warning:", "This country already exists in list:)", "OK");
+            }
+            else {
+                countries.Add(new Country { Name = country.Text, Capital = capital.Text, Population = population.Text, Flag = imageURL.Text });
+            }
+                
         }
     }
 }
